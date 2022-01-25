@@ -6,9 +6,11 @@ The primary functions for this:
 + `add_line`  
 + `set_param` 
 + `get_param` 
-    
+  
+Required version of MATLAB 2021b and higher      
+  
 ## Sine Wave Model  
-The script checks for the existence of the `test_system.slx` file. The file is then recreated. Each script startup overwrites the Simulink model `test_system.slx`. The script will add new blocks to the schema space:  
+To run the example use `just_sin_wave.m`. The script checks for the existence of the `test_system.slx` file. The file is then recreated. Each script startup overwrites the Simulink model `test_system.slx`. The script will add new blocks to the scheme space:  
   
 ![Creating blocks](pic/1.png)  
   
@@ -21,7 +23,7 @@ Block parameters are changed and simulation is started. To close the model, you 
 ![Creating blocks](pic/3.png)   
   
 ## 2 Bar Mechanism  
-  
+To run the example use `two_bar_mech.m`.  
   
   
   
