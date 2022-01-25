@@ -9,9 +9,9 @@ The primary functions for this:
     
 ## Sine Wave Model  
 The script checks for the existence of the `test_system.slx` file. The file is then recreated. Each script startup overwrites the Simulink model `test_system.slx`. The script will add new blocks to the schema space:  
-![Creating blocks](https://github.com/IvolgaDmitriy/matlab_experiments/Exp1/pic/1.png)  
+![Creating blocks](pic/1.png)  
 After that, the script adds links between the blocks:  
-![Adding lines](https://github.com/IvolgaDmitriy/matlab_experiments/Exp1/pic/2.png)  
+![Adding lines](pic/2.png)  
 Block parameters are changed and simulation is started. To close the model, you must press the Enter key in the Matlab console.
   
   
