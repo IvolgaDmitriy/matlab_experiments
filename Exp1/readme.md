@@ -14,6 +14,28 @@ The primary functions for this:
   
 2. To determine the name of the ports, you need to find it in the model and hover over the port icon:  
 ![Port name](pic/tip2.png)  
+  
+3. To set block parameters, you need to know the exact names of the fields. You can get information about all fields of the block with the command:  
+```MATLAB
+get_param([fname,'/MyGain'], 'ObjectParameters')
+
+ans = 
+
+  struct with fields:
+
+                                        Name: [1×1 struct]
+                                         Tag: [1×1 struct]
+                                 Description: [1×1 struct]
+                                        Type: [1×1 struct]
+                                      Parent: [1×1 struct]
+                                      Handle: [1×1 struct]
+                             HiliteAncestors: [1×1 struct]
+                             RequirementInfo: [1×1 struct]
+                                       Ports: [1×1 struct]
+                                    Position: [1×1 struct]
+                                    ...
+                                    ...
+```
 
 ## Sine Wave Model  
 To run the example use `just_sin_wave.m`. The script checks for the existence of the `test_system.slx` file. The file is then recreated. Each script startup overwrites the Simulink model `test_system.slx`. The script will add new blocks to the scheme space:  
