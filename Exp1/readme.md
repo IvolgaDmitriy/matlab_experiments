@@ -8,7 +8,7 @@ The primary functions for this:
 + `get_param` 
     
 ## Sine Wave Model  
-  
+For startup this exemple use `just_sin_wave.m`. 
   
   
 ## 2 Bar Mechanism  
