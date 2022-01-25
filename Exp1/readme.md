@@ -43,6 +43,26 @@ Before using `get_param` the model must first be loaded into memory. This can be
 ans =
 
     '1'
+```  
+You can find out what values can be assigned to the field by manually setting the block parameters:  
+Step 1: View field value  
+```MATLAB
+>> get_param([fname,'/RT1'], 'RotationMethod')
+
+ans =
+
+    'None'
+```  
+Step 2:Change block settings manually  
+![manually1](pic/tip3.png) ![manually2](pic/tip4.png)  
+  
+Step3: Check new field value  
+```MATLAB
+>> get_param([fname,'/RT1'], 'RotationMethod')
+
+ans =
+
+    'StandardAxis'
 ```
 
 ## Sine Wave Model  
