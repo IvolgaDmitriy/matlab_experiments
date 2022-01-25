@@ -17,7 +17,7 @@ The primary functions for this:
   
 3. To set block parameters, you need to know the exact names of the fields. You can get information about all fields of the block with the command:  
 ```MATLAB
-get_param([fname,'/MyGain'], 'ObjectParameters')
+>> get_param([fname,'/MyGain'], 'ObjectParameters')
 
 ans = 
 
@@ -35,6 +35,14 @@ ans =
                                     Position: [1×1 struct]
                                     ...
                                     ...
+```  
+Before using `get_param` the model must first be loaded into memory. This can be achieved by either opening the model manually or by using either of the the API functions `load_system` or `open_system`. View the value of a target field:  
+```MATLAB
+>> get_param([fname,'/MyGain'], 'Gain')
+
+ans =
+
+    '1'
 ```
 
 ## Sine Wave Model  
