@@ -8,6 +8,9 @@ The primary functions for this:
 + `set_param` 
 + `get_param`     
   
+## Helpful Tips  
+1.  
+
 ## Sine Wave Model  
 To run the example use `just_sin_wave.m`. The script checks for the existence of the `test_system.slx` file. The file is then recreated. Each script startup overwrites the Simulink model `test_system.slx`. The script will add new blocks to the scheme space:  
   
