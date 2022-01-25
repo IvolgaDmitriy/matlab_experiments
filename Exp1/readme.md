@@ -9,7 +9,11 @@ The primary functions for this:
 + `get_param`     
   
 ## Helpful Tips  
-1.  
+1. To determine the source path of the placed block, you need to open the Simulink Library Browser, find the required block, move the mouse cursor:  
+![Source path](pic/tip1.png)  
+  
+2. To determine the name of the ports, you need to find it in the model and hover over the port icon:  
+![Port name](pic/tip2.png)  
 
 ## Sine Wave Model  
 To run the example use `just_sin_wave.m`. The script checks for the existence of the `test_system.slx` file. The file is then recreated. Each script startup overwrites the Simulink model `test_system.slx`. The script will add new blocks to the scheme space:  
