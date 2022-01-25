@@ -8,7 +8,11 @@ The primary functions for this:
 + `get_param` 
     
 ## Sine Wave Model  
-For startup this exemple use `just_sin_wave.m`. 
+The script checks for the existence of the `test_system.slx` file. The file is then recreated. Each script startup overwrites the Simulink model `test_system.slx`. The script will add new blocks to the schema space:  
+![Image alt](https://github.com/IvolgaDmitriy/matlab_experiments/raw/{branch}/{path}/1.png)  
+After that, the script adds links between the blocks:  
+![Image alt](https://github.com/IvolgaDmitriy/matlab_experiments/raw/{branch}/{path}/2.png)  
+Block parameters are changed and simulation is started. To close the model, you must press the Enter key in the Matlab console.
   
   
 ## 2 Bar Mechanism  
